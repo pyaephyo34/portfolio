@@ -1,10 +1,11 @@
 import React from 'react';
-import IMG1 from '../../assets/alc.png';
-import IMG2 from '../../assets/todo.png';
-import IMG3 from '../../assets/shelter.png';
-import IMG4 from '../../assets/fake.png';
-import IMG5 from '../../assets/news.png';
-import IMG6 from '../../assets/math.png';
+import IMG1 from '../../assets/tharapa.PNG';
+import IMG2 from '../../assets/livechat.PNG';
+import IMG3 from '../../assets/biminer.PNG';
+import IMG4 from '../../assets/tharapashop.PNG';
+import IMG5 from '../../assets/boss.png';
+import IMG6 from '../../assets/gscafepos.PNG';
+import IMG7 from '../../assets/istock.PNG';
 
 import './portfolio.css';
 
@@ -12,68 +13,78 @@ const Portfolio = () => {
   const soloProjects = [
     {
       id: 1,
-      title: 'Adventist Learning Center',
+      title: 'Tharapa Chatbot and Ecommerce',
       img: IMG1,
       description:
-        'Adventist Learning Center provides quality education to Syrian and Kurdish Refugees living in Beirut, Lebanon. This simple website was built to reach a bigger audience and ease the process of gathering donations for the ALC students.',
-      technologies: 'Ruby on Rails | SCSS',
-      link: 'https://adventistlearningcenter-257375ab1970.herokuapp.com/',
-      github: 'https://github.com/Meri-MG/school',
-    },
-    {
-      id: 2,
-      title: 'FakeStore',
-      img: IMG4,
-      description:
-        'FakeStore app that provides information about available products and their details',
-      technologies: 'React | Redux',
-      link: 'https://fakestore-metrics.netlify.app/',
-      github: 'https://github.com/Meri-MG/Fakestore---react',
+        'Create messenger chatbot and sell products on the chatbot.Sales transactions can be view at admin portal dashboard',
+      technologies: 'Node js | VUE Js | Laravel | Facebook APIs | MySQL | MongoDB | AWS EC2 RDS',
+      link: 'https://tharapa.ai/',
+      github: '',
     },
     {
       id: 3,
-      title: 'To-Do App',
+      title: 'BI Miner',
+      img: IMG3,
+      description: 'Social Listening Tool which can monitor Facebook public pages. Crawling data using Facebook Graph API, storing in MongoDB, and visualization data on analytics data.',
+      technologies: 'Laravel | Node Js | MySQL | MongoDB | Facebook APIs | AWS EC2 S3',
+      link: 'https://business.baganintel.com/en/biminer',
+      github: '',
+    },
+    {
+      id: 2,
+      title: 'Tharapa Live Chat',
       img: IMG2,
-      description: 'User friendly app to plan your day and manage tasks',
-      technologies: 'JavaScript | Webpack',
-      link: 'https://meri-mg.github.io/To-Do-List/dist/',
-      github: 'https://github.com/Meri-MG/To-Do-List',
+      description:
+        'LiveChat Tool for Facebook Messenger and Viber.',
+      technologies: 'VUE Js | Node Js',
+      link: 'https://livechat.tharapa.ai/',
+      github: '',
     },
     {
       id: 4,
-      title: 'Shelter',
-      img: IMG3,
+      title: 'Tharapa Ecommerce',
+      img: IMG4,
       description:
-        'Fully responsive interactive website built based on Figma design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/shelter/pages/main/index.html',
-      github: 'https://github.com/Meri-MG/shelter',
+        'E-commerce Platform that can connect with Tharapa Chatbot.',
+      technologies: 'Laravel | MySQL | AWS EC2 S3',
+      link: 'https://shop.tharapa.com/',
+      github: '',
     },
     {
       id: 5,
-      title: 'World News',
+      title: 'BOSS POS',
       img: IMG5,
       description:
-        'Fully responsive interactive website built based on Adobe XD design',
-      technologies: 'JavaScript | CSS',
-      link: 'https://meri-mg.github.io/Unilab-world-news/',
-      github: 'https://github.com/Meri-MG/Unilab-world-news',
+        'Point of Sales and Inventory Control Management System(Multi Branch and Outlet).',
+      technologies: 'PHP | codeigniter | C#.net | MySQL | MSSQL | RDLC',
+      link: 'https://www.bossposmm.com/boss_analytics/',
+      github: '',
     },
     {
       id: 6,
-      title: 'Math Resource',
+      title: 'GSCafePOS',
       img: IMG6,
       description:
-        'Real-world group project which is still in progress and will provide educational platform for future young developers',
-      technologies: 'JavaScript | Scss | Python',
-      link: 'https://lukinoo.github.io/math-resource/',
-      github: 'https://github.com/lukinoo/math-resource',
+        'Restaurant Management System which includes features of POS, Waiter Tablet, Print Directly to Kitchen, etc…',
+      technologies: 'C#.net | RDLC | MSSQL | Java | IIS Server | Team Foundation Server',
+      link: 'https://galaxy.com.mm/archives/product/cafepos',
+      github: '',
+    },
+    {
+      id: 7,
+      title: 'iStock',
+      img: IMG7,
+      description:
+        'Inventory Control Management System (Sale, Purchase, Multi-Currency, Outstanding, Inventory(FIFO, LIFO, AVERAGE)).',
+      technologies: 'C#.net | RDLC | MSSQL | Team Foundation Server',
+      link: 'https://galaxy.com.mm/archives/product/myanmar-istock',
+      github: '',
     },
   ];
 
   return (
     <section id="portfolio">
-      <h5>My Recent Work</h5>
+      <h5>My Previous Work</h5>
       <h2>Portfolio</h2>
 
       <div className="container portfolio__container">
@@ -88,14 +99,14 @@ const Portfolio = () => {
               <p>{pro.technologies}</p>
             </div>
             <div className="portfolio__item-cta">
-              <a
+              {/* <a
                 href={pro.github}
                 target="_blank"
                 className="btn"
                 rel="noreferrer"
               >
                 GitHub
-              </a>
+              </a> */}
               <a
                 href={pro.link}
                 target="_blank"
