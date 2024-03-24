@@ -1,6 +1,7 @@
 import React from 'react';
 import { BsLinkedin } from 'react-icons/bs';
 import { FaGithub } from 'react-icons/fa';
+import { FaFacebook } from "react-icons/fa";
 import { FaAngellist } from 'react-icons/fa'
 import './footer.css';
 
@@ -25,6 +26,7 @@ const Footer = () => {
       <div className="footer__socials">
       <a href="https://www.linkedin.com/in/mike-phyo/" target="_blank" rel="noreferrer" ><BsLinkedin /></a>
       <a href="https://github.com/pyaephyo34" target="_blank" rel="noreferrer" ><FaGithub /></a>
+      <a href="https://www.facebook.com/profile.php?id=1795698791" target="_blank" rel="noreferrer" ><FaFacebook  /></a>
       {/* <a href="https://angel.co/u/meri-gogichashvili" target="_blank" rel="noreferrer" ><FaAngellist /></a> */}
       </div>
       <div className="footer__copyright">
